@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>luas lingkaran</title>
+</head>
+<body>
+
+	<script language="javascript">
+		function luaslingkaran()
+		{
+			var jari2 = 
+			parseFloat(document.funday.nilai_jari2.value);
+			if(isNaN(jari2)){
+				jari2=0.0;}
+		var hasil= 3.14*jari2*jari2;
+		alert("jadi luas lingkaran adalah : "+hasil);
+			
+		}
+	</script>
+	<form name="funday">
+		<pre>
+			nilai Jari-jari = <input type="text" name="nilai_jari2"/>
+		</pre>
+		
+		<input type="button" value="hitung sekarang" onclick="luaslingkaran()"/>
+		<input type="reset" value="reset">
+	</form>
+
+</body>
+</html>

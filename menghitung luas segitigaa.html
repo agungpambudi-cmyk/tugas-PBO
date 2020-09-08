@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>luas segitigaaa</title>
+</head>
+<body>
+	<script language="javascript">
+
+function sg()
+{
+var alas = parseFloat(document.arz.nilai_alas.value);
+if(isNaN(alas)){
+alas=0.0;}
+var tinggi = parseFloat(document.arz.nilai_tinggi.value);
+if(isNaN(tinggi)){
+tinggi=0.0;}
+
+var hasil = 0.5*alas*tinggi;
+
+alert("Jadi,luas segitiga adalah : "+ hasil);
+}
+</script>
+
+<form name="arz">
+<pre>
+Nilai Alas   = <input type="text" name="nilai_alas" />
+Nilai Tinggi = <input type="text" name="nilai_tinggi" />
+</pre>
+<input type="button" value="Hitung Sekarang" onClick="sg()" />
+<input type="reset" value="Reset" />
+
+</body>
+</html>
